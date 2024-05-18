@@ -1,3 +1,20 @@
+## Install dependencies
+
+- Dev dependencies 
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest 
+- Direct dependencies 
+npm install @craco/craco dayjs @tailwindcss/forms 
+
+## Run Commands after Installing dependencies
+
+- npm run build
+
+## Run the server by
+
+-npm run start
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
