@@ -1,0 +1,587 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<< day.js custom css >>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.custom-day {
+  background-color: #3b82f6;
+  border-radius: 9999px;
+  width: 1.75rem;
+}
+
+.custom-event-day {
+  background-color: rgb(252, 10, 139);
+  padding: 0.25rem;
+  margin-right: 0.75rem;
+  color: #4a5568;
+  font-size: 0.875rem;
+  border-radius: 0.375rem;
+  margin-bottom: 0.25rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.custom-flex-point {
+  flex: 1;
+  cursor: pointer;
+}
+
+.custom-day:hover {
+  transform: scale(1.1);
+}
+
+.custom-container {
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.custom-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-sm-mt-1 {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #f472b6, #fbbc05);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-family: "Comic Sans MS", cursive;
+  transition: transform 0.2s ease-in-out;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.text-sm-mt-1:hover {
+  transform: translateY(-2px) rotate(-5deg);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.custom-text-two {
+  font-size: 0.875rem;
+  padding: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<app.js custom css>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+.custom-column {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-flex-1 {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  background: linear-gradient(
+    135deg,
+    #f472b6,
+    #fbbc05
+  ); /* Gradient background */
+  border-radius: 1rem; /* Increase border-radius for a rounded shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-flex-1:hover {
+  transform: translateY(-4px) scale(1.05); /* Add scale effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Adjust box-shadow */
+}
+
+.custom-flex-1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-flag {
+  display: flex;
+  flex: 1;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<CalendarHeader.js custom css>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.custom-flex-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.custom-icon-container {
+  margin-right: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.custom-icon-container:hover {
+  transform: scale(1.1);
+}
+
+.custom-style {
+  margin-right: 2.5rem;
+  font-size: 1.25rem;
+  color: #6b7280;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-style:hover {
+  transform: scale(1.1);
+}
+
+.styled-box {
+  border: 0.5px dashed #ff69b4;
+  border-radius: 0.99rem;
+  padding: 1.5rem;
+  margin-right: 1.25rem;
+  background: linear-gradient(135deg, #f472b6, #fbbc05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.styled-box:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.custom-icons {
+  font-family: "Material Icons", sans-serif;
+  cursor: pointer;
+  color: rgb(216, 13, 162);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.custom-current-month {
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  color: #6b7280;
+  font-weight: bold;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<< Month.js custom css >>>>>>>>>>>>>>>>>>>>>>>>>.*/
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-rows: repeat(5, minmax(0, auto));
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.custom-grid:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/*<<<<<<<<<<<<<<<<< CreateEventButton.js custom css >>>>>>>>>>>>>>>>>>>>*/
+
+.custom-crateevent {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f472b6, #fbbc05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.custom-crateevent:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-createImg {
+  width: 1.75rem;
+  height: 1.75rem;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.customText {
+  padding-left: 0.75rem;
+  padding-right: 1.75rem;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/*<<<<<<<<<<<<<<<<<<<< SmallCalendar.js custom css  >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.custom-calendar-day {
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-calendar-day:hover {
+  transform: scale(1.1) rotate(15deg);
+}
+
+.custom-calendar-item {
+  background: linear-gradient(90deg, #f6ad55, #f687b3);
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-calendar-item:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.custom-grid-small {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-rows: repeat(6, minmax(0, auto));
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #48c6ef, #6f86d6);
+  border-radius: 0.4rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-grid-small:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.custom-small-calendar-text {
+  font-size: 0.875rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.custom-small-calendar-pad {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  width: 100%;
+}
+
+.custom-textsmall {
+  font-size: 0.875rem;
+  animation: wiggle 1s infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*<<<<<<<<<<<<<<<<<<< Eventmodal.js custom css>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.h-screen-w-full-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(135deg, #ff7eb6, #1be7ff);
+}
+
+.bg-white-rounded-lg-shadow-2xl-w {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 25%;
+  animation: fadeInDown 0.5s ease;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-EventModal-third {
+  background: linear-gradient(90deg, #ff80ab, #ffdb8c);
+  padding: 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-material-icon {
+  font-family: "Material Icons", sans-serif;
+  color: #718096;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.custom-padding-eventMo {
+  padding: 3%;
+}
+
+.custom-grid-eventMo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: end;
+  gap: 7px;
+}
+
+.custom-event-title {
+  padding-top: 0.75rem;
+  border: none;
+  color: #805ad5;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  border-bottom: 3px solid #e2e8f0;
+  border-color: #cbd5e0;
+  outline: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-event-title:focus {
+  border-color: #ff00ff;
+  box-shadow: 0 0 0 4px rgba(255, 0, 255, 0.5);
+}
+
+.material-icons-custom {
+  font-family: "Material Icons";
+  font-size: 24px;
+  color: #666;
+}
+
+.custom-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-schedule {
+  display: flex;
+  align-items: center;
+}
+
+.custom-schedule p {
+  margin-bottom: 0;
+}
+
+.custom-schedule span.material-icons-custom {
+  margin-right: 5px;
+}
+
+.custom-input-desc {
+  padding-top: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-width: 0;
+  color: #4a5568;
+  width: 80%;
+  border-bottom-width: 2px;
+  border-color: #e2e8f0;
+  outline: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-size: 1rem;
+  background-color: #f7fafc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 1px rgba(66, 153, 225, 0);
+}
+
+.custom-input-desc:focus {
+  border-color: #4299e1;
+  box-shadow: 0 0 0 1px rgba(66, 153, 225, 0.5);
+}
+
+.custom-save {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #e2e8f0;
+  padding: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.custom-button {
+  background-color: #4ea5d9;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:hover {
+  background-color: #1c87d8;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
+}
+
+.custom-flex-gap {
+  display: flex;
+  padding-top: 0.75rem;
+  gap: 0.4rem;
+  padding-left: 0.2rem;
+}
+
+.custom-label {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.custom-label:hover {
+  transform: scale(1.1);
+}
+
+:root {
+  --bg-indigo-500: #5c6ac4;
+  --bg-gray-500: #718096;
+  --bg-green-500: #68d391;
+  --bg-blue-500: #4299e1;
+  --bg-red-500: #f56565;
+  --bg-purple-500: #9f7aea;
+}
+
+.custom-material-icon-box {
+  font-family: "Material Icons Outlined";
+  font-size: 1rem;
+  color: #fff;
+}
